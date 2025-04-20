@@ -9,12 +9,9 @@
 }
 
 .company-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0 20px;
   border-radius: 5px;
-  height: 150px;
+  height: 180px;
   background-color: #1c1c1c;
   transition: transform 0.2s ease;
 }
@@ -23,8 +20,9 @@
   transform: translateY(-2px);
 }
 
-.card-content {
-  padding: 10px 0;
+.card-header {
+  display: flex;
+  align-items: center;
 }
 
 img {

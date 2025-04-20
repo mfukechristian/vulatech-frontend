@@ -27,14 +27,16 @@ const CompanyPage = () => {
                 key={company._id}
               >
                 <div className="company-card">
-                  <img
-                    src={company.logo}
-                    alt={`${company.companyName} Logo`}
-                    className="company-logo"
-                  />
+                  <div className="card-header">
+                    <img
+                      src={company.logo}
+                      alt={`${company.companyName} Logo`}
+                      className="company-logo"
+                    />{" "}
+                    <h2>{company.companyName}</h2>
+                  </div>
 
                   <div className="card-content">
-                    <h2>{company.companyName}</h2>
                     <p>{company.description}</p>
                   </div>
                 </div>
