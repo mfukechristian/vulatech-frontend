@@ -41,3 +41,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* For tablet screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  body {
+    font-size: 0.8rem;
+  }
+}

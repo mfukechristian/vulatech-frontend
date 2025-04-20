@@ -10,11 +10,11 @@
 
 .company-card {
   display: flex;
-  padding: 10px;
-  border-radius: 5px;
   align-items: center;
   justify-content: center;
-  height: 180px;
+  padding: 0 20px;
+  border-radius: 5px;
+  height: 150px;
   background-color: #1c1c1c;
   transition: transform 0.2s ease;
 }
@@ -23,10 +23,43 @@
   transform: translateY(-2px);
 }
 
-.card-img img {
-  width: 100px;
-  height: 100px;
-  display: block;
+.card-content {
+  padding: 10px 0;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
   margin-right: 20px;
   border-radius: 5px;
+}
+
+/* For tablet screens */
+@media (max-width: 1800px) {
+  .company-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* For tablet screens */
+@media (max-width: 1023px) {
+  .company-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 800px) {
+  .company-cards {
+    grid-template-columns: 1fr;
+  }
 }

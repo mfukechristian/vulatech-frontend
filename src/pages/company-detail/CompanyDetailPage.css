@@ -63,3 +63,15 @@ img {
   margin-right: 10px;
   text-decoration: underline;
 }
+
+/* For mobile screens */
+@media (max-width: 800px) {
+  .founders ul,
+  .investors ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 12px;
+
+    margin-left: 20px;
+  }
+}
