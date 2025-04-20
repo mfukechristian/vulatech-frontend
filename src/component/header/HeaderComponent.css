@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.logo-container a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cta-container a {
+  margin: 0 10px;
+}
