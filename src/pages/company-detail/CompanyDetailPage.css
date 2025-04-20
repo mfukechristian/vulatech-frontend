@@ -1,5 +1,29 @@
-.company-detail-container {
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin: 20px;
+.company-detail-page {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.company-detail-page h1 {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.industry-tag {
+  background-color: #1c1c1c;
+  font-weight: 500;
+  margin: 10px 0;
+  color: #fff;
+  width: 100px;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.company-detail-page p {
+  line-height: 1.8;
+  margin-bottom: 10px;
 }

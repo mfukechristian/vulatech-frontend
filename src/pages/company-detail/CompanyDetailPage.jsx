@@ -30,12 +30,8 @@ const CompanyDetailPage = () => {
         alt={`${selectedCompany.companyName} Logo`}
         className="company-detail-logo"
       />
-      <p>
-        <strong>About:</strong> {selectedCompany.about}
-      </p>
-      <p>
-        <strong>Industry:</strong> {selectedCompany.industry}
-      </p>
+      <div className="industry-tag">{selectedCompany.industry}</div>
+      <p>{selectedCompany.about}</p>
       <p>
         <strong>Location:</strong> {selectedCompany.city},{" "}
         {selectedCompany.province}
@@ -43,6 +39,10 @@ const CompanyDetailPage = () => {
       <p>
         <strong>Employees:</strong> {selectedCompany.totalEmployees}
       </p>
+      <p>
+        <strong>Total Fundings:</strong> `$ ${selectedCompany.totalFundings}`
+      </p>
+
       <a href={selectedCompany.websiteLink} target="_blank" rel="noreferrer">
         Visit Website
       </a>

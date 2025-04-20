@@ -15,8 +15,6 @@ const CompanyPage = () => {
 
   return (
     <div className="company-page">
-      <h1>Companies</h1>
-
       {loading && <p>Loading companies...</p>}
       {error && <p>Error: {error}</p>}
 
@@ -24,18 +22,23 @@ const CompanyPage = () => {
         {companies?.length > 0
           ? companies.map((company) => (
               <Link
-                to={`/pageDetail/${company._id}`}
+                to={`/detail/${company._id}`}
                 className="company-card-link"
                 key={company._id}
               >
                 <div className="company-card">
-                  <img
-                    src={company.logo}
-                    alt={`${company.companyName} Logo`}
-                    className="company-logo"
-                  />
-                  <h2>{company.companyName}</h2>
-                  <p>{company.description}</p>
+                  <div className="card-img">
+                    <img
+                      src={company.logo}
+                      alt={`${company.companyName} Logo`}
+                      className="company-logo"
+                    />
+                  </div>
+
+                  <div className="card-content">
+                    <h2>{company.companyName}</h2>
+                    <p>{company.description}</p>
+                  </div>
                 </div>
               </Link>
             ))
