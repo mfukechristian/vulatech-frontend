@@ -3,6 +3,11 @@
   margin: 20px auto;
 }
 
+.company-detail-page p {
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
 .company-detail-page h1 {
   margin-bottom: 20px;
 }
@@ -10,6 +15,20 @@
 img {
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.company-identifier {
+  display: flex;
+  align-items: center;
+}
+
+.company-identifier .company-socials {
+  margin-left: 20px;
+}
+
+.company-identifier .company-socials a {
+  margin: 0 8px;
+  font-size: 1.2rem;
 }
 
 .industry-tag {
@@ -23,7 +42,24 @@ img {
   border-radius: 5px;
 }
 
-.company-detail-page p {
-  line-height: 1.8;
-  margin-bottom: 10px;
+.founders,
+.investors {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.founders ul,
+.investors ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 12px;
+
+  margin-left: 20px;
+}
+
+.founders ul li,
+.investors ul li {
+  list-style: none;
+  margin-right: 10px;
+  text-decoration: underline;
 }

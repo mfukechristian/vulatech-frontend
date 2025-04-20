@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 import { fetchCompanyById } from "../../../redux/actions/companyAction";
 import "./CompanyDetailPage.css";
 
@@ -32,56 +34,59 @@ const CompanyDetailPage = () => {
         className="company-detail-logo"
       />
 
-      <p>
-        <strong>Description:</strong> {selectedCompany.description}
-      </p>
-      <p>
-        <strong>About:</strong> {selectedCompany.about}
-      </p>
-      <p>
-        <strong>Industry:</strong> {selectedCompany.industry}
-      </p>
+      <div className="company-identifier">
+        <div className="industry-tag">{selectedCompany.industry}</div>
+        <div className="company-socials">
+          {" "}
+          <a
+            href={selectedCompany.websiteLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGlobe />
+          </a>
+          <a
+            href={selectedCompany.linkedinLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+      </div>
+
+      <p>{selectedCompany.about}</p>
+
       <p>
         <strong>Location:</strong> {selectedCompany.city},{" "}
         {selectedCompany.province}
       </p>
       <p>
-        <strong>Created In:</strong> {selectedCompany.companyCreationDate}
+        <strong>Founded:</strong> {selectedCompany.companyCreationDate}
       </p>
       <p>
-        <strong>Total Employees:</strong> {selectedCompany.totalEmployees}
+        <strong>Company size:</strong> {selectedCompany.totalEmployees}
       </p>
       <p>
-        <strong>Total Fundings:</strong> $
+        <strong>Total Public Fundings:</strong> $
         {selectedCompany.totalFundings.toLocaleString()}
       </p>
-      <p>
-        <strong>Website:</strong>{" "}
-        <a href={selectedCompany.websiteLink} target="_blank" rel="noreferrer">
-          {selectedCompany.websiteLink}
-        </a>
-      </p>
-      <p>
-        <strong>LinkedIn:</strong>{" "}
-        <a href={selectedCompany.linkedinLink} target="_blank" rel="noreferrer">
-          {selectedCompany.linkedinLink}
-        </a>
-      </p>
 
-      <div>
+      <div className="founders">
+        {" "}
         <strong>Founders:</strong>
         <ul>
           {selectedCompany.founders.map((founder, index) => (
             <li key={index}>
               <a href={founder.linkedinLink} target="_blank" rel="noreferrer">
-                {founder.name} ({founder.role})
+                {founder.name}
               </a>
             </li>
           ))}
         </ul>
       </div>
 
-      <div>
+      <div className="investors">
         <strong>Investors:</strong>
         <ul>
           {selectedCompany.investors.map((investor, index) => (
