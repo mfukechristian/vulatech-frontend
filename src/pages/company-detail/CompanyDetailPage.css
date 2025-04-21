@@ -48,12 +48,8 @@ img {
   margin-bottom: 20px;
 }
 
-.founders ul,
-.investors ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 12px;
-
+.investors ul,
+.founders ul {
   margin-left: 20px;
 }
 
@@ -61,17 +57,14 @@ img {
 .investors ul li {
   list-style: none;
   margin-right: 10px;
+  margin-bottom: 10px;
   text-decoration: underline;
 }
 
 /* For mobile screens */
 @media (max-width: 800px) {
-  .founders ul,
-  .investors ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 12px;
-
-    margin-left: 20px;
+  .company-detail-page {
+    width: 100%;
+    padding: 0 20px;
   }
 }
