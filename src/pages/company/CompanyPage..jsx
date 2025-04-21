@@ -15,6 +15,15 @@ const CompanyPage = () => {
 
   return (
     <div className="company-page">
+      <div className="company-page-hero">
+        <h1>Discover South African Startups Driving Innovation</h1>
+        <p>
+          Browse our comprehensive directory of South African startups that are
+          shaping the future. Explore their innovative products and the change
+          they're creating.
+        </p>
+      </div>
+
       {loading && <p>Loading companies...</p>}
       {error && <p>Error: {error}</p>}
 

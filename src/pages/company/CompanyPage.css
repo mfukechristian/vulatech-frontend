@@ -2,6 +2,17 @@
   padding: 20px;
 }
 
+.company-page-hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.company-page-hero p {
+  width: 50%;
+  font-size: 1rem;
+  margin: 20px auto;
+}
+
 .company-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -52,6 +63,10 @@ img {
   img {
     width: 60px;
     height: 60px;
+  }
+  .company-page-hero p {
+    width: 100%;
+    margin: 20px auto;
   }
 }
 
