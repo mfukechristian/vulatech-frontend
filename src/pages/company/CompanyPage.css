@@ -27,7 +27,7 @@
 .company-card {
   padding: 20px;
   border-radius: 5px;
-  height: 200px;
+  height: 250px;
   background-color: #1c1c1c;
   transition: transform 0.2s ease;
 }
