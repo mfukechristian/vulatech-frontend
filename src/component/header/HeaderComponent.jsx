@@ -19,7 +19,6 @@ const HeaderComponent = () => {
 
       <div className="cta-container">
         <Link>About</Link>
-        <Link>Submit</Link>
       </div>
     </header>
   );
