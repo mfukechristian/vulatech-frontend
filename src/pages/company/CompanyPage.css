@@ -9,9 +9,9 @@
 }
 
 .company-card {
-  padding: 0 20px;
+  padding: 20px;
   border-radius: 5px;
-  height: 180px;
+  height: 200px;
   background-color: #1c1c1c;
   transition: transform 0.2s ease;
 }
