@@ -23,7 +23,13 @@ const CompanyPage = () => {
     ? companies.filter((company) => company.industry === activeFilter)
     : companies;
 
-  const industries = ["Fintech", "Marketplace"];
+  const industries = [
+    "AI",
+    "Fintech",
+    "Marketplace",
+    "Transportation",
+    "E-commerce",
+  ];
 
   return (
     <div className="company-page">
