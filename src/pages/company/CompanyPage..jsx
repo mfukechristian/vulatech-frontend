@@ -29,6 +29,8 @@ const CompanyPage = () => {
     "Marketplace",
     "Transportation",
     "E-commerce",
+    "Telecom",
+    "Insuretech",
   ];
 
   return (
