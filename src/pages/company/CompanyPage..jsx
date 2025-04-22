@@ -12,8 +12,10 @@ const CompanyPage = () => {
   const { companies, loading, error } = useSelector((state) => state.companies);
 
   useEffect(() => {
-    dispatch(fetchAllCompanies());
-  }, [dispatch]);
+    if (companies.length === 0) {
+      dispatch(fetchAllCompanies());
+    }
+  }, [dispatch, companies.length]);
 
   const handleFilterClick = (industry) => {
     setActiveFilter((prev) => (prev === industry ? null : industry));
