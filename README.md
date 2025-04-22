@@ -1,12 +1,36 @@
-# React + Vite
+# VulaTech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+The frontend is built with React and provides the user interface for the application. It uses React Router for navigation and Redux for state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Dependencies
 
-## Expanding the ESLint configuration
+- @reduxjs/toolkit
+- axios
+- react
+- react-dom
+- react-icons
+- react-redux
+- react-router-dom
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts
+
+- `dev`: Runs the development server.
+- `build`: Builds the application for production.
+- `lint`: Lints the code.
+- `preview`: Previews the built application.
+
+## How to run
+
+1.  Install dependencies: `npm install`
+2.  Run the development server: `npm run dev`
+
+## File Structure
+
+- `public/`: Contains static assets.
+- `redux/`: Contains Redux store, actions, and reducers.
+- `src/`: Contains the application source code.
+  - `App.jsx`: The main application component.
+  - `component/`: Contains reusable components.
+  - `pages/`: Contains page components.
