@@ -62,7 +62,6 @@ const CompanyPage = () => {
         ))}
       </div>
       {loading && <p>Loading companies...</p>}
-      {error && <p>Error: {error}</p>}
       <div className="company-cards">
         {filteredCompanies?.length > 0
           ? filteredCompanies.map((company) => (
