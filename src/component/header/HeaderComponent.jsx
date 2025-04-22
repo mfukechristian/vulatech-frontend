@@ -5,12 +5,6 @@ import { Link } from "react-router-dom";
 const HeaderComponent = () => {
   return (
     <header>
-      <div className="pages-component">
-        <Link className="page-link" to="/">
-          Startups
-        </Link>
-      </div>
-
       <div className="logo-container">
         <Link className="logo-link" to="/">
           vulatech.
@@ -18,7 +12,13 @@ const HeaderComponent = () => {
       </div>
 
       <div className="cta-container">
-        <Link>About</Link>
+        <Link
+          to={"https://christianmfuke.netlify.app/"}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Read about the author of this site
+        </Link>
       </div>
     </header>
   );
