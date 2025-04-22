@@ -68,8 +68,10 @@ const CompanyDetailPage = () => {
         <strong>Company size:</strong> {selectedCompany.totalEmployees}
       </p>
       <p>
-        <strong>Total Public Fundings:</strong> $
-        {selectedCompany.totalFundings.toLocaleString()}
+        <strong>Total Public Fundings:</strong>{" "}
+        {selectedCompany.totalFundings === 0
+          ? "Undisclosed"
+          : `$${selectedCompany.totalFundings.toLocaleString()}`}
       </p>
 
       <div className="founders">
