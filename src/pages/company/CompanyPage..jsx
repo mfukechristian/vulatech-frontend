@@ -63,7 +63,12 @@ const CompanyPage = () => {
           </button>
         ))}
       </div>
-      {loading && <p>Loading companies...</p>}
+      {loading && (
+        <div className="loading-container">
+          {" "}
+          <p>Loading companies...</p>
+        </div>
+      )}
       <div className="company-cards">
         {filteredCompanies?.length > 0
           ? filteredCompanies.map((company) => (

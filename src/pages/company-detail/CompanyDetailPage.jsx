@@ -20,7 +20,13 @@ const CompanyDetailPage = () => {
     }
   }, [dispatch, id]);
 
-  if (loading) return <p>Loading company details...</p>;
+  if (loading)
+    return (
+      <div className="loading-container">
+        {" "}
+        <p>Loading detail...</p>
+      </div>
+    );
   if (error) return <p>Error: {error}</p>;
   if (!selectedCompany) return null;
 
